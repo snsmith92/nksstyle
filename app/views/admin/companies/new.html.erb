@@ -1,7 +1,15 @@
 <br />
 <br />
+<div class="card text-white bg-secondary my-4 text-center col-10 offset-1">
+  <div class="card-body">
+    <p class="text-white m-0"> We've been waiting on you.</p>
+  </div>
+</div>
+
+<br />
+<br />
 <div class= "col-8 offset-2">
-  <h1> Add your company! </h1>
+  <h3> Add Your Company </h3>
   <%= simple_form_for @company, url: admin_companies_path do |f| %>
     <%= f.input :name %>
     <%= f.input :description %>
