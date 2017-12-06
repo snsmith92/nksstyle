@@ -1,0 +1,22 @@
+<br />
+<br />
+<div class= "col-8 offset-2">
+  <h1> Add your company! </h1>
+  <%= simple_form_for @company, url: admin_companies_path do |f| %>
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :address %>
+    <%= f.input :phone %>
+    <%= f.input :email %>    
+    <%= f.input :website %>
+    <%= f.input :facebook %>
+    <br />
+    <%= f.submit "Create", class: 'btn btn-primary' %>
+    <br />
+  <% end %>
+  <br />
+
+
+</div>
+
+<br />
