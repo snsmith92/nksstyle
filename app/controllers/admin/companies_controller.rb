@@ -12,6 +12,7 @@ class Admin::CompaniesController < ApplicationController
   end 
 
   def show
+    @servicegroup = Servicegroup.new 
   end 
 
   private
