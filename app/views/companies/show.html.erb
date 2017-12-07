@@ -1,20 +1,22 @@
-<hr class="">
-<div class="container target">
-    <div class="row">
-      <div class="col-sm-2">
-        <%= image_tag 'barber.jpg', class: 'img-circle' %>
-      </div>        
-      <div class="col-sm-10">
-        <h2 ><%=current_company.name %>&nbsp; &nbsp; <i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></h2>
-        <% if current_user && current_user == current_company.user %>
-          <%= link_to 'View Admin Page', admin_company_path(current_company), class: 'btn btn-success'%>
-          <br />
-          <br />        
-        <% end %>
-        <p>Location: <%= current_company.address%>
-        <br />
-        Phone: <%= current_company.phone %> </p>
-      </div>
+<div class = "profile-page">
+    <br />
+    <br />
+    <div class="container target">
+        <div class="row">
+          <div class="col-sm-2">
+            <%= image_tag 'barber.jpg', class: 'img-circle' %>
+          </div>        
+          <div class="col-sm-10">
+            <h2 ><%=current_company.name %>&nbsp; &nbsp; <i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></h2>
+            <% if current_user && current_user == current_company.user %>
+              <%= link_to 'View Admin Page', admin_company_path(current_company), class: 'btn btn-success'%>
+              <br />
+              <br />        
+            <% end %>
+            <p>Location: <%= current_company.address%>
+            <br />
+            Phone: <%= current_company.phone %> </p>
+          </div>
 
     </div>
   <br>
@@ -67,5 +69,5 @@
 
             <div id="push"></div>
         </div>
-        
+    </div>
 </div>

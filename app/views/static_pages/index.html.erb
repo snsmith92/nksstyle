@@ -1,4 +1,4 @@
-  <body>
+  <body class = "home-page">
 
     <!-- Page Content -->
     <div class="container">
@@ -45,9 +45,9 @@
       <!-- /.row -->
 
       <!-- Call to Action Well -->
-      <div class="card text-white bg-secondary my-4 text-center">
+      <div class="card text-white bg-secondary transparency my-4 text-center">
         <div class="card-body">
-          <p class="text-white m-0"> <strong> <%= link_to 'Sign Up', new_user_registration_path %> </strong> for a <span class="bigger">FREE</span> NKS Style Account to connect your business to new and existing clients. &nbsp; <%= link_to "Learn More", about_path, class: 'btn btn-primary' %> </p>
+          <p class="text-white m-0"> Sign Up for a FREE<span class="logo"> NKS STYLE </span>account to connect your business to new and existing clients. &nbsp; <%= link_to "Learn More", about_path, class: 'btn btn-primary' %> </p>
         </div>
       </div>
 
@@ -56,8 +56,8 @@
         <div class="col-md-4 mb-4">
           <div class="card h-100">
             <div class="card-body">
-              <h5 class="card-title">Random Company 1</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+              <h5 class="card-title"><%=@company1.name%></h5>
+              <p class="card-text"><%=@company1.description %></p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">View Services</a>
@@ -68,8 +68,8 @@
         <div class="col-md-4 mb-4">
           <div class="card h-100">
             <div class="card-body">
-              <h5 class="card-title">Random Company 2</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+              <h5 class="card-title"><%=@company2.name%></h5>
+              <p class="card-text"><%=@company2.description %></p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">View Services</a>
@@ -80,8 +80,8 @@
         <div class="col-md-4 mb-4">
           <div class="card h-100">
             <div class="card-body">
-              <h5 class="card-title">Random Company 3</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+              <h5 class="card-title"><%=@company3.name%></h5>
+              <p class="card-text"><%=@company3.description %></p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">View Services</a>
@@ -99,8 +99,8 @@
         <div class="col-md-4 mb-4">
           <div class="card h-100">
             <div class="card-body">
-              <h5 class="card-title">Random Company 4</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+              <h5 class="card-title"><%=@company4.name%></h5>
+              <p class="card-text"><%=@company4.description %></p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">View Services</a>
@@ -111,8 +111,8 @@
         <div class="col-md-4 mb-4">
           <div class="card h-100">
             <div class="card-body">
-              <h5 class="card-title">Random Company 5</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+              <h5 class="card-title"><%=@company5.name%></h5>
+              <p class="card-text"><%=@company5.description %></p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">View Services</a>
@@ -123,8 +123,8 @@
         <div class="col-md-4 mb-4">
           <div class="card h-100">
             <div class="card-body">
-              <h5 class="card-title">Random Company 6</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+              <h5 class="card-title"><%=@company6.name%></h5>
+              <p class="card-text"><%=@company6.description %></p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">View Services</a>

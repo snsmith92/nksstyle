@@ -22,13 +22,13 @@
 
 .bigger { 
   font-size:125%; 
-  letter-spacing: 4px;
 }
 
 .footer {
   position: absolute;
   width: 100%;
   bottom: 0;
+  top: 0;
   line-height: 60px;
 }
 
@@ -69,4 +69,43 @@
 
 .clr {
   clear: both;
+}
+
+
+.company-list-page{
+  background-image: image_url("ladyflower.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.add-company-page{
+  background-image: image_url("ladysmiling.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.home-page{
+  background-color: #fcf5e8;
+}
+
+.profile-page{
+  background-color: #fcf5e8;
+}
+
+.transparency {
+  opacity: 0.7;
+}
+
+.transparency > .btn {
+  opacity: 1;
+}
+
+.logo{
+  font-family: quicksandlight;
+  letter-spacing: 3px;
+  font-size: 150%; 
+  font-weight: 70%;
+  opacity: 1;
 }

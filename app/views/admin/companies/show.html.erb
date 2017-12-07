@@ -1,5 +1,8 @@
-<hr class="">
-<div class="container target">
+<div class = "profile-page">
+    <br />
+    <br />
+
+    <div class="container target">
     <div class="row">
       <div class="col-sm-2">
         <%= image_tag 'barber.jpg', class: 'img-circle' %>
@@ -73,19 +76,18 @@
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h6 class="modal-title" id="newServicegroupModal">Add A Service Category &nbsp;&nbsp;</h6>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">×</span>
+                                  <span aria-hidden="true"> x </span>
                                 </button>
-                                <h6 class="modal-title" id="newServicegroupModal">Add A Service Category</h6>
                               </div>
                             <%= simple_form_for @servicegroup, url: admin_company_servicegroups_path(current_company) do |f| %>
                               <div class="modal-body">
-                                <br/>
                                     <%= f.input :title, label: 'Service Group Title', placeholder: "e.g. Hair Braiding" %>
                               </div>
                               <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <%= f.submit "Add Service Group", class: 'btn btn-primary' %>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                <%= f.submit "Add Service Group", class: 'btn btn-success' %>
                               </div>
                             <% end %>  
                             </div>
@@ -117,3 +119,4 @@
             <div id="push"></div>
         </div>
     </div>
+</div>
