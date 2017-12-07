@@ -1,5 +1,5 @@
 @import "bootstrap";
-
+@import 'font-awesome';
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
   max-height: 312px;
@@ -40,4 +40,33 @@
     height: 60px;
     line-height: 60px;
     background-color: #f5f5f5;
+}
+
+.img-circle{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.list-subheader{
+  font-family: 'quicksandregular';
+}
+
+.list-group-item{
+  font-family: 'quicksanditalic';
+}
+
+.panel {
+  border-style: solid;
+  border-color: #D64541;
+  border-width: 1px;
+  padding: 20px;
+}
+
+.icon-cog {
+  color: #D64541;
+}
+
+.clr {
+  clear: both;
 }

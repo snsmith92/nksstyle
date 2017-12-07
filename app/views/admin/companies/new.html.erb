@@ -1,3 +1,4 @@
+
 <br />
 <br />
 <div class="card text-white bg-secondary my-4 text-center col-10 offset-1">
@@ -11,13 +12,17 @@
 <div class= "col-8 offset-2">
   <h3> Add Your Company </h3>
   <%= simple_form_for @company, url: admin_companies_path do |f| %>
-    <%= f.input :name %>
-    <%= f.input :description %>
-    <%= f.input :address %>
-    <%= f.input :phone %>
-    <%= f.input :email %>    
-    <%= f.input :website %>
-    <%= f.input :facebook %>
+    <%= f.input :name, label: 'Company Name', placeholder: "e.g. My Awesome Company" %>
+    
+    <%= f.input :description, placeholder: 'Tell potential clients more about your business. Give your best elevator pitch!' %>
+
+
+
+    <%= f.input :address, placeholder: "Clients will depend on this to find you. Make sure it's accurate!" %>
+    <%= f.input :phone, placeholder: 'e.g. 1-242-555-555' %>
+    <%= f.input :email, label: 'Company Email', placeholder: 'myawesomecompany@domain.com' %>    
+    <%= f.input :website, label: 'Company Website', placeholder: 'e.g. https://myawesomecompany.com/' %>
+    <%= f.input :facebook, label: 'Company Facebook Page', placeholder: 'e.g. https://www.facebook.com/myawesomecompany/' %>
     <br />
     <%= f.submit "Create", class: 'btn btn-primary' %>
     <br />

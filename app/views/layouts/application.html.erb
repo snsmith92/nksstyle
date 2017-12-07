@@ -14,12 +14,6 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/small-business.css" rel="stylesheet">
-
   </head>
 
   <body>
@@ -42,8 +36,9 @@
               <%= link_to 'Services', '#', class: 'nav-link' %>
             </li>
             <li class="nav-item">
-              <%= link_to 'Vendors', '#', class: 'nav-link' %>
-            </li>            
+              <%= link_to 'Vendors', companies_path, class: 'nav-link' %>
+            </li>  
+            &nbsp;          
             <li class="nav-item">
               <%= link_to 'Add Your Company', new_admin_company_path, class: 'btn btn-primary' %>
             </li>
@@ -74,15 +69,15 @@
     <!-- Footer -->
     <div id="footer">
       <div class="container">
-        <b> Companies </b>
+        <b> N K S For Companies </b>
         <br />
         <%= link_to 'Manage Your Company', '#' %>
+        <br />
+        <%= link_to 'Contact Us', '#' %>
       </div>
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
 

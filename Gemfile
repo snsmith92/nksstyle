@@ -64,3 +64,9 @@ gem 'simple_form'
 
 # Add devise for user authentication
 gem 'devise'
+
+#Font awesome for icons
+gem 'font-awesome-rails'
+
+# Gem for Jquery Turbolinks
+gem 'jquery-turbolinks'
