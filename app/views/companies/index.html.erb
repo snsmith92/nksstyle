@@ -1,26 +1,26 @@
 <br /> 
 <br />
-  <h3 class="text-center">Choose From A Wide Range of Vendors</h3>
-  <hr />
+<h3 class="text-center">Choose From A Wide Range of Vendors</h3>
+<hr />
 
-  <!-- Content Row 1-->
-  <div class = "col-12">
-      <div class = "container">
-        <div class="row">    
-          <% @companies.each do |company| %>
-            <div class="col-12 col-md-4 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 style="color:#D64541;" class="card-title"><%= company.name %></h5>
-                  <p class="card-text"><%= company.description %></p>
-                </div>
-                <div class="card-footer">
-                  <%= link_to 'View Services', company_path(company), class: "btn btn-primary" %>
-                </div>
+<!-- Content Row 1-->
+<div class = "col-12">
+    <div class = "container">
+      <div class="row">    
+        <% @companies.each do |company| %>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 style="color:#D64541;" class="card-title"><%= company.name %></h5>
+                <p class="card-text"><%= company.description %></p>
+              </div>
+              <div class="card-footer">
+                <%= link_to 'View Services', company_path(company), class: "btn btn-primary" %>
               </div>
             </div>
-            <br class = "clr" />
-          <% end %>
-        </div>
+          </div>
+          <br class = "clr" />
+        <% end %>
       </div>
-  </div>
+    </div>
+</div>

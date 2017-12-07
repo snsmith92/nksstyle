@@ -8,7 +8,7 @@
         <h2 ><%=current_company.name %>&nbsp; &nbsp; <i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></h2>
         <%= link_to 'Edit', '#', class: 'btn btn-success'%>
         <%= link_to 'View Calendar', '#', class: 'btn btn-primary'%>
-        <%= link_to 'View Public Page', '#', class: 'btn btn-primary'%>
+        <%= link_to 'View Public Page', company_path(current_company), class: 'btn btn-primary'%>
         
         <br>
         <br>
@@ -62,8 +62,13 @@
             <br />
             <br />
             <div class="panel panel-default">
-                <div class="panel-heading"><h3>Services <%= link_to 'Add a Service', '#', class: 'pull-right btn btn-success btn-sm' %></h3></div> 
-                <div class="panel-body"> <p> List of services</p>
+                <div class="panel-heading"><h3>Services <%= link_to 'Add Service Category', new_admin_company_servicegroup_path(current_company), class: 'pull-right btn btn-success btn-sm' %></h3></div> 
+                <div class="panel-body"> 
+                    <p> 
+                        <% current_company.servicegroups.each do |servicegroup| %>
+                            <%= servicegroup.title %>
+                        <% end %>
+                    </p>
                 </div>
             </div>
             <br />
