@@ -67,21 +67,21 @@
             <div class="panel panel-default">
                 <div class="panel-heading"><h3>Services 
                     <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-success btn-sm pull-right" data-toggle="modal" data-target="#newServicegroupModal">
+                        <button type="button" class="btn btn-success btn-sm pull-right" data-toggle="modal" data-target="#newServiceGroupModal">
                           Add Service Category
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="newServicegroupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="newServiceGroupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <h6 class="modal-title" id="newServicegroupModal">Add A Service Category &nbsp;&nbsp;</h6>
+                                <h6 class="modal-title" id="newServiceGroupModal">Add A Service Category &nbsp;&nbsp;</h6>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true"> x </span>
                                 </button>
                               </div>
-                            <%= simple_form_for @servicegroup, url: admin_company_servicegroups_path(current_company) do |f| %>
+                            <%= simple_form_for @service_group, url: admin_company_service_groups_path(current_company) do |f| %>
                               <div class="modal-body">
                                     <%= f.input :title, label: 'Service Group Title', placeholder: "e.g. Hair Braiding" %>
                               </div>
@@ -98,8 +98,8 @@
             </div> 
                 <div class="panel-body"> 
                     <p> 
-                        <% current_company.servicegroups.each do |servicegroup| %>
-                            <%= servicegroup.title %>
+                        <% current_company.service_groups.each do |service_group| %>
+                            <%= service_group.title %>
                             <br />
                         <% end %>
                     </p>

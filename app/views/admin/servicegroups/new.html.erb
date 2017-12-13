@@ -6,7 +6,7 @@
 <div class= "col-8 offset-2">
 <h3> Add A Service Group </h3>
 <br/>
-  <%= simple_form_for @servicegroup, url: admin_company_servicegroups_path(@company) do |f| %>
+  <%= simple_form_for @service_group, url: admin_company_service_groups_path(@company) do |f| %>
     <%= f.input :title, label: 'Service Group Title', placeholder: "e.g. Hair Braiding" %>
     <br />
     <%= f.submit "Add Service Group", class: 'btn btn-primary' %>
